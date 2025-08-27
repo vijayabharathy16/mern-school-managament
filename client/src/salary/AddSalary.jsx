@@ -53,7 +53,7 @@ function AddSalary() {
    e.preventDefault();
    if(!validateForm()) return;
       try {
-            const response = await fetch('http://localhost:3001/api/salary/addSalary',{
+            const response = await fetch('https://mern-school-managament-backend.onrender.com/api/salary/addSalary',{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",

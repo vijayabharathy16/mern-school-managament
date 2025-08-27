@@ -33,11 +33,12 @@ const Layout = ( {children}) => {
         <main>
          {children}
         </main>
-        
        
+        
       </div>
     </div>
   );
 };
 
 export default Layout;
+

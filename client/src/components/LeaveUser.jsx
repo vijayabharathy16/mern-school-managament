@@ -65,7 +65,7 @@ export const LeaveButton = ({id, onLeaveDel}) => {
       if (result.isConfirmed) {
         try {
           const response = await fetch(
-            `http://localhost:3001/api/leave/deleteLeave/${id}`,
+            `https://mern-school-managament-backend.onrender.com/api/leave/deleteLeave/${id}`,
             {
               method: "DELETE",
             }

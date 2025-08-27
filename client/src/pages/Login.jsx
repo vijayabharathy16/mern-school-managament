@@ -36,7 +36,7 @@ function Login() {
     e.preventDefault();
     if (!validateForm()) return;
     try {
-      const response = await fetch("http://localhost:3001/auth/api/login", {
+      const response = await fetch("https://mern-school-managament-backend.onrender.com/auth/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

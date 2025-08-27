@@ -22,7 +22,7 @@ function Users() {
    };
     const fetchStaff = async () =>{
           try {
-            const response = await fetch('http://localhost:3001/api/staff/allStaff');
+            const response = await fetch('https://mern-school-managament-backend.onrender.com/api/staff/allStaff');
             const data = await response.json();
             const staffWithSno = data.map((staff, index) => ({
         sno: index + 1,

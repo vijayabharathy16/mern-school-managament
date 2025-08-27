@@ -12,7 +12,7 @@ function LeaveList() {
     }
     const fetchLeave = async() => {
         try {
-             const resposne = await fetch('http://localhost:3001/api/leave/allLeave');
+             const resposne = await fetch('https://mern-school-managament-backend.onrender.com/api/leave/allLeave');
         const data = await resposne.json();
          const leaveWithSno = data.map((leave,index) => ({
                         sno: index + 1,

@@ -12,7 +12,7 @@ function SalaryList() {
     }
     const fetchSalary = async () => {
         try {
-            const response = await fetch('http://localhost:3001/api/salary/allSalary');
+            const response = await fetch('https://mern-school-managament-backend.onrender.com/api/salary/allSalary');
             const data = await response.json();
             const salaryWithSno = data.map((salary,index) => ({
                 sno: index + 1,

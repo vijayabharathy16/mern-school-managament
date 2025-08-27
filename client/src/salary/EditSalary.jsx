@@ -16,7 +16,7 @@ function EditSalary() {
   
        const fetchSalary = async () => {
           try {
-            const response = await fetch(`http://localhost:3001/api/salary/getOneSalary/${id}`);
+            const response = await fetch(`https://mern-school-managament-backend.onrender.com/api/salary/getOneSalary/${id}`);
             const data = await response.json();
             setDepartment(data.department || '');
             setStaff(data.staff || '');
@@ -36,7 +36,7 @@ function EditSalary() {
        const editSalary = async (e) => {
         e.preventDefault();
                try {
-                const response = await fetch (`http://localhost:3001/api/salary/updateSalary/${id}`,{
+                const response = await fetch (`https://mern-school-managament-backend.onrender.com/api/salary/updateSalary/${id}`,{
                  method:"PUT",
                   headers:{
                       "Content-Type" : "application/json"

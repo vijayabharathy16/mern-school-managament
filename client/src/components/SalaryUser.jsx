@@ -57,7 +57,7 @@ export const SalaryButton = ({id, onSalaryDel}) => {
       if (result.isConfirmed) {
         try {
           const response = await fetch(
-            `http://localhost:3001/api/salary/deleteSalary/${id}`,
+            `https://mern-school-managament-backend.onrender.com/api/salary/deleteSalary/${id}`,
             {
               method: "DELETE",
             }

@@ -47,7 +47,7 @@ function AddStaffMember() {
          e.preventDefault();
          if(!validateForm()) return;
         try {
-            const response = await fetch('http://localhost:3001/api/staff/addStaff',{
+            const response = await fetch('https://mern-school-managament-backend.onrender.com/api/staff/addStaff',{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",

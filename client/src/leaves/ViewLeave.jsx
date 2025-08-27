@@ -8,7 +8,7 @@ function ViewLeave() {
     const [leaves, setLeaves] = useState([]);
     const fetchViewLeave = async () => {
         try {
-            const response = await fetch(`http://localhost:3001/api/leave/getOneLeave/${id}`);
+            const response = await fetch(`https://mern-school-managament-backend.onrender.com/api/leave/getOneLeave/${id}`);
             if(!response.ok) throw new Error ('Failed to fetch to salary data');
             const data = await response.json();
             setLeaves(data);
