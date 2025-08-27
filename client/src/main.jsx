@@ -6,14 +6,14 @@ import './index.css'
 import App from './App.jsx'
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import { AuthProvider } from "./auth/AuthProvider";
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <BrowserRouter/> */}
 
-    <AuthProvider>
+  
     <ToastContainer/>
     <App />
-    </AuthProvider>
+    
   </StrictMode>,
 )
