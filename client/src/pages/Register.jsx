@@ -41,7 +41,7 @@ function Register() {
        if(!validateForm()) return;
         
         try {
-           const response = await fetch('https://mern-school-managament-backend.onrender.com/auth/api/register',{
+           const response = await fetch('https://mern-school-managament-front-end.onrender.com/auth/api/register',{
             method:'POST',
             headers:{
                 "Content-Type":"application/json"

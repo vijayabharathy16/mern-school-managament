@@ -16,7 +16,7 @@ function ViewStaff() {
 
          const fetchViewStaff = async () =>{
                   try {
-                    const response = await fetch(`https://mern-school-managament-backend.onrender.com/api/staff/getSingle/${id}`);
+                    const response = await fetch(`https://mern-school-managament-front-end.onrender.com/api/staff/getSingle/${id}`);
                       if (!response.ok) throw new Error("Failed to fetch staff data");
                      const data = await response.json();
                     //  console.log(data)

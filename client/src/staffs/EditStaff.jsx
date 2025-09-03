@@ -17,7 +17,7 @@ function EditStaff() {
 
      const fetchStaff = async () =>{
               try {
-                const response = await fetch(`https://mern-school-managament-backend.onrender.com/api/staff/getSingle/${id}`);
+                const response = await fetch(`https://mern-school-managament-front-end.onrender.com/api/staff/getSingle/${id}`);
                 const data = await response.json();
                 //  console.log(data)
                    setName(data.name || "");
@@ -40,7 +40,7 @@ function EditStaff() {
         e.preventDefault();
 
         try {
-            const response = await fetch (`https://mern-school-managament-backend.onrender.com/api/staff/updatedUser/${id}`,{
+            const response = await fetch (`https://mern-school-managament-front-end.onrender.com/api/staff/updatedUser/${id}`,{
                 method:"PUT",
                 headers:{
                     "Content-Type" : "application/json"

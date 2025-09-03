@@ -10,7 +10,7 @@ const Topbar = () => {
   useEffect(() => {
     async function fetchProtected() {
       try {
-        const res = await fetch("https://mern-school-managament-backend.onrender.com/auth/api/profile", {
+        const res = await fetch("https://mern-school-managament-front-end.onrender.com/auth/api/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         const data = await res.json();

@@ -17,7 +17,7 @@ function EditLeave() {
 
      const fetchLeave = async () => {
         try {
-            const response = await fetch(`https://mern-school-managament-backend.onrender.com/api/leave/getOneLeave/${id}`);
+            const response = await fetch(`https://mern-school-managament-front-end.onrender.com/api/leave/getOneLeave/${id}`);
             const data = await response.json();
             setStaffName(data.staffname || '');
             setLeaveType(data.leavetype || '');
@@ -37,7 +37,7 @@ function EditLeave() {
      const editLeave = async(e) => {
         e.preventDefault();
         try {
-             const response = await fetch (`https://mern-school-managament-backend.onrender.com/api/leave/updatedLeave/${id}`,{
+             const response = await fetch (`https://mern-school-managament-front-end.onrender.com/api/leave/updatedLeave/${id}`,{
                  method:"PUT",
                   headers:{
                       "Content-Type" : "application/json"

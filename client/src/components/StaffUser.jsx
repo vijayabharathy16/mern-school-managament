@@ -55,7 +55,7 @@ export const StaffButton = ({ id, onStaffDel }) => {
       if (result.isConfirmed) {
         try {
           const response = await fetch(
-            `https://mern-school-managament-backend.onrender.com/api/staff/deletedUser/${id}`,
+            `https://mern-school-managament-front-end.onrender.com/api/staff/deletedUser/${id}`,
             {
               method: "DELETE",
             }

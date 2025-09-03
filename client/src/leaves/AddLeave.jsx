@@ -44,7 +44,7 @@ function AddLeave() {
         e.preventDefault();
     if(!validateForm()) return;
         try {
-            const response = await fetch('https://mern-school-managament-backend.onrender.com/api/leave/addLeave',{
+            const response = await fetch('https://mern-school-managament-front-end.onrender.com/api/leave/addLeave',{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",
